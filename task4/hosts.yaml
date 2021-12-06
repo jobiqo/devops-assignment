@@ -1,0 +1,22 @@
+all:
+  children:
+    appservers:
+      children:
+        germany:
+          hosts:
+            app1.domain.com:
+              ansible_user: jenkins
+            app2.domain.com:
+              ansible_user: jenkins
+            app3.domain.com:
+              ansible_user: jenkins
+            app4.domain.com:
+              ansible_user: jenkins
+            app5.domain.com:
+              ansible_user: jenkins
+            app6.domain.com:
+              ansible_user: jenkins
+    demo:
+      hosts:
+        demo.domain.com:
+          ansible_user: jenkins
